@@ -35,3 +35,42 @@ td {
 #content {
     width: 70%;
 }
+
+.table-wrapper{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    border: 1px solid green ;
+
+    margin-block: 5px;
+    padding: 5px;
+
+    border-radius: 5px;
+    
+    background-color: #aaa;
+}
+
+.table-wrapper:hover{
+    background-color: aliceblue;
+    margin: 6px;
+}
+
+
+.table-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.table-btn a{
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid salmon;
+    padding: 5px;
+}
+
+.table-btn a:hover{
+    padding: 8px;
+}
+
+
