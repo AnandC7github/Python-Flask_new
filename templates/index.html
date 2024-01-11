@@ -8,6 +8,13 @@
 <div class="content">
     <h1 style="text-align: center">TO-DO-LIST</h1>
     
+    <div class="input-form">
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
+    
     {% if tasks|length < 1 %}
         <h3="text-align:center">There are no tasks. Create one below</h3>
     {% else %}
@@ -34,11 +41,6 @@
 
 </div>
 
-<div class="input-form">
-    <form action="/" method="POST">
-        <input type="text" name="content" id="content">
-        <input type="submit" value="Add Task">
-    </form>
-</div>
+
 
 {% endblock %}
